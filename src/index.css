@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.box {
+  box-shadow: 2px 15px 18px 3px rgba(200, 197, 197, 0.51);
+  -webkit-box-shadow: 2px 15px 18px 3px rgba(200, 197, 197, 0.51);
+  -moz-box-shadow: 2px 15px 18px 3px rgba(200, 197, 197, 0.51);
+}
+
+.head {
+  font-family: "Outfit", sans-serif;
+}
+
+.body {
+  font-family: "Switzer", sans-serif;
+}
