@@ -1,3 +1,5 @@
+import backdrop from "../../assets/backdrop.svg";
+
 const Hero = () => {
   return (
     <main className='flex lg:flex-row lg:pt-20 pt-10 flex-col'>
@@ -29,7 +31,12 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className='lg:basis-[40%] basis-full flex justify-center items-center'>
+      <section className='lg:basis-[40%] lg:mt-0 mt-36 mb-16 relative isolate basis-full flex justify-center items-center'>
+        <img
+          src={backdrop}
+          className='h-[200px] lg:h-[200%] -z-10 absolute'
+          alt=''
+        />
         <div className='bg-gray-500 h-4/5 aspect-square rounded-full'></div>
       </section>
     </main>

@@ -42,8 +42,8 @@ const Payment = () => {
         </p>
 
         <div className='flex lg:justify-start justify-center'>
-          <button className='bg-[#3a89e1] shadow-xl lg:mt-10 mt-5 text-white font-semibold px-8 py-4 rounded-xl'>
-            Make Payment
+          <button className='border-[3px] border-white shadow-xl lg:mt-10 mt-5 text-white font-semibold px-8 py-3 rounded-xl'>
+            Learn More
           </button>
         </div>
       </section>

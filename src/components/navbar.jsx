@@ -28,12 +28,20 @@ const Navbar = () => {
         ))}
       </section>
       <section className='basis-1/4 lg:flex hidden justify-end'>
-        <button className='bg-gradient-to-r body from-primary to-secondary  text-white font-bold px-8 py-4 rounded-xl'>
+        {/* <button className='bg-gradient-to-r body from-primary to-secondary  text-white font-bold px-8 py-4 rounded-xl'>
           Connect Wallet
+        </button> */}
+
+        <button className='bg-gradient-to-r from-primary to-secondary mx-5 text-primary font-semibold px-0 py-0 rounded-xl'>
+          <span className='bg-white rounded-lg py-2 m-1 px-6'>Login</span>
+        </button>
+
+        <button className='bg-gradient-to-r from-primary to-secondary text-white font-semibold px-6 py-3 rounded-xl'>
+          Sign Up
         </button>
       </section>
       {/* Mobile Menu For Responsive View */}
-      <section className='flex lg:hidden basis-1/2 justify-end'>
+      <section className='flex lg:hidden  basis-1/2 justify-end'>
         <TbMenuDeep
           size={"2.2rem"}
           onClick={() => setMobileMenu(true)}
@@ -41,7 +49,7 @@ const Navbar = () => {
         />
       </section>
       <div
-        className={`w-9/12 bg-gradient-to-tr from-primary to-secondary  transition-all duration-200 ease-linear h-screen lg:hidden block fixed px-5 pt-5 left-0 top-0 ${
+        className={`w-9/12 bg-gradient-to-tr from-primary to-secondary  transition-all duration-200 ease-linear h-screen lg:hidden block z-20 fixed px-5 pt-5 left-0 top-0 ${
           mobileMenu ? "left-0" : "left-[-100%]"
         }`}
       >
@@ -58,7 +66,7 @@ const Navbar = () => {
         <div className='mt-10 flex flex-col'>
           {menuItems.map((item, index) => (
             <Link
-              className='p-4 text-white body border-2 border-white/30 rounded-xl shadow-xl my-5 '
+              className='py-3 px-2 text-white body border-2 border-white/30 rounded-xl shadow-xl my-3 '
               to={item.to}
               key={index}
             >
@@ -66,8 +74,12 @@ const Navbar = () => {
             </Link>
           ))}
 
-          <button className='bg-white body mt-10 font-bold px-8 py-4 text-text rounded-xl'>
-            Connect Wallet
+          <button className='bg-white body mt-6 font-bold px-6 py-3 text-text rounded-xl'>
+            Login
+          </button>
+
+          <button className='bg-text body mt-5 font-bold px-6 py-3 text-white rounded-xl'>
+            Sign Up
           </button>
         </div>
       </div>
