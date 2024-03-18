@@ -22,10 +22,8 @@ const Features = () => {
     },
   ];
   return (
-    <main>
-      <p className='text-center pt-20 body font-bold text-lg text-text'>
-        Features
-      </p>
+    <main className='lg:mt-20 mt-10'>
+      <p className='text-center body font-bold text-lg text-text'>Features</p>
 
       <p className='text-center font-bold head text-3xl mt-5 lg:text-5xl'>
         Why choose ICPREM?

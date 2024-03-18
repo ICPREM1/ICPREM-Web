@@ -5,7 +5,7 @@ import link from "../assets/Vector.svg";
 
 const Footer = () => {
   return (
-    <footer className='bg-[#232323] body lg:container mx-auto lg:px-20 px-5 py-10 text-white'>
+    <footer className='bg-[#232323] body lg:container mx-auto lg:px-20 px-5 lg:py-20 py-10 text-white/90'>
       <section className='flex lg:flex-row flex-col justify-between'>
         <div className='lg:basis-2/4 basis-full'>
           <p className='font-bold lg:text-3xl text-2xl head'>Logo</p>
@@ -33,7 +33,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className='lg:basis-1/3 lg:mt-0 mt-5 basis-full flex flex-col lg:pl-16'>
+        <div className='lg:basis-1/3 lg:mt-0 mt-10 basis-full flex flex-col lg:pl-16'>
           <p>Follow Us</p>
           <a href='#' className='flex my-3'>
             <img src={face} className='mr-3' alt='' />

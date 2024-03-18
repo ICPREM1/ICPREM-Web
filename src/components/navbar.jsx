@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const [mobileMenu, setMobileMenu] = useState(false);
   return (
-    <nav className='flex items-center lg:h-24 h-16 lg:pt-5 lg:border-0 border-primary border-b-[1px]'>
+    <nav className='flex items-center lg:h-24 h-16 lg:pt-5 lg:border-0 body border-primary border-b-[1px]'>
       <section className='lg:basis-1/4 basis-1/2'>
         <p className='font-bold text-3xl head'>Logo</p>
       </section>
@@ -21,7 +21,7 @@ const Navbar = () => {
           <Link
             to={item.to}
             key={index}
-            className='mx-8 text-lg body font-semibold text-grey'
+            className='mx-8 text-lg font-semibold text-grey'
           >
             {item.title}
           </Link>
@@ -32,16 +32,16 @@ const Navbar = () => {
           Connect Wallet
         </button> */}
 
-        <button className='mx-5 text-text border-2 border-text font-bold px-8 py-3 rounded-xl'>
+        <Link to={"/login"} className='mx-5 text-text border-2 border-text font-bold px-8 py-3 rounded-xl'>
           Login
-        </button>
+        </Link>
 
-        <button className='bg-gradient-to-r from-primary to-secondary text-white font-semibold px-6 py-3 rounded-xl'>
+        <Link to={"/signUp"} className='bg-gradient-to-r from-primary to-secondary text-white font-semibold px-6 py-3 rounded-xl'>
           Sign Up
-        </button>
+        </Link>
       </section>
       {/* Mobile Menu For Responsive View */}
-      <section className='flex lg:hidden  basis-1/2 justify-end'>
+      <section className='flex lg:hidden basis-1/2 justify-end'>
         <TbMenuDeep
           size={"2.2rem"}
           onClick={() => setMobileMenu(true)}
@@ -63,10 +63,10 @@ const Navbar = () => {
           />
         </div>
 
-        <div className='mt-10 flex flex-col'>
+        <div className='mt-10 flex flex-col divide-y-2 divide-dashed divide-white/30'>
           {menuItems.map((item, index) => (
             <Link
-              className='py-3 px-2 text-white body border-2 border-white/30 rounded-xl shadow-xl my-3 '
+              className='py-6 text-white flex my-0'
               to={item.to}
               key={index}
             >
@@ -74,13 +74,9 @@ const Navbar = () => {
             </Link>
           ))}
 
-          <button className='bg-white body mt-6 font-bold px-6 py-3 text-text rounded-xl'>
-            Login
-          </button>
+          <Link to={"/login"} className='py-6 text-white'>Login</Link>
 
-          <button className='bg-text body mt-5 font-bold px-6 py-3 text-white rounded-xl'>
-            Sign Up
-          </button>
+          <Link to={"/signUp"} className='py-6 text-white'>Sign Up</Link>
         </div>
       </div>
     </nav>

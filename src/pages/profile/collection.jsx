@@ -1,16 +1,34 @@
 import NF from "@/assets/Image card.svg";
 import { TbCurrencyNaira } from "react-icons/tb";
+import pic1 from "@/assets/imCard.svg"
+import pic2 from "@/assets/imCard2.svg";
+import pic3 from "@/assets/imCard3.svg";
 
 const Collection = () => {
   let NFTCollection = [
-    { payment: "NUESA", lvl: "100", amount: "4000" },
-    { payment: "Digitron", lvl: "100", amount: "5000" },
-    { payment: "SUG", lvl: "100", amount: "2000" },
-    { payment: "NUESA", lvl: "200", amount: "2000" },
-    { payment: "Digitron", lvl: "200", amount: "2500" },
-    { payment: "SUG", lvl: "200", amount: "1000" },
-    { payment: "NUESA", lvl: "300", amount: "2000" },
-    { payment: "Digitron", lvl: "300", amount: "2500" },
+    {
+      payment: "NUESA",
+      lvl: "100",
+      amount: "4000",
+      pic: pic1,
+    },
+    {
+      payment: "Digitron",
+      lvl: "100",
+      amount: "5000",
+      pic: pic2,
+    },
+    {
+      payment: "SUG",
+      lvl: "100",
+      amount: "2000",
+      pic: pic3,
+    },
+    { payment: "NUESA", lvl: "200", amount: "2000", pic: pic1 },
+    { payment: "Digitron", lvl: "200", amount: "2500", pic: pic2 },
+    { payment: "SUG", lvl: "200", amount: "1000", pic: pic3 },
+    { payment: "NUESA", lvl: "300", amount: "2000", pic: pic1 },
+    { payment: "Digitron", lvl: "300", amount: "2500", pic: pic2 },
   ];
   return (
     <main className='body lg:mt-10 mt-5'>
@@ -21,7 +39,7 @@ const Collection = () => {
       <section className='grid lg:grid-cols-4 grid-cols-2 mt-5 lg:gap-8 gap-4'>
         {NFTCollection.map((NFT, index) => (
           <div key={index} className=''>
-            <img src={NF} className='w-full' alt='' />
+            <img src={NFT.pic} className='w-full' alt='' />
 
             <div className='flex mt-3 lg:text-base text-xs justify-between'>
               <div>

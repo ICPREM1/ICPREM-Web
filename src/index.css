@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 .box {
-  box-shadow: 2px 15px 18px 3px rgba(200, 197, 197, 0.51);
-  -webkit-box-shadow: 2px 15px 18px 3px rgba(200, 197, 197, 0.51);
-  -moz-box-shadow: 2px 15px 18px 3px rgba(200, 197, 197, 0.51);
+  box-shadow: 2px 15px 18px 3px #b4eaf9;
+  -webkit-box-shadow: 2px 15px 18px 3px #b4eaf9;
+  -moz-box-shadow: 2px 15px 18px 3px #b4eaf9;
 }
 
 .head {
@@ -15,4 +15,3 @@
 .body {
   font-family: "Switzer", sans-serif;
 }
- 

@@ -1,25 +1,29 @@
 import blank from "../../assets/Group 23.svg";
+import pic from "../../assets/Image.svg";
+import pic1 from "../../assets/Image1.svg";
+import pic2 from "../../assets/Image2.svg";
+import pic3 from "../../assets/Image3.svg";
 
 const Payment = () => {
   return (
     <main className='bg-gradient-to-br lg:py-32 py:10 text-white lg:container lg:mx-auto lg:px-20 px-5 from-primary to-secondary flex lg:flex-row flex-col'>
       <section className='lg:basis-[55%] lg:mt-0 mt-20 flex relative justify-center items-center basis-full'>
-        <img src={blank} className='lg:h-3/5 h-44' alt='' />
+        <img src={pic} className='lg:h-3/5 h-44' alt='' />
 
         <img
-          src={blank}
-          className='h-1/4 absolute lg:right-20 -right-2  rotate-[-26.1deg] top-0'
+          src={pic1}
+          className='h-1/4 absolute lg:right-20 -right-2 top-0'
           alt=''
         />
 
         <img
-          src={blank}
-          className='h-1/5 absolute lg:right-20 -right-2  rotate-[26.1deg] bottom-0'
+          src={pic3}
+          className='h-1/5 absolute lg:right-20 -right-2 bottom-0'
           alt=''
         />
 
         <img
-          src={blank}
+          src={pic2}
           className='h-[15%] absolute lg:left-10 left-0 rotate-[164.2deg] top-[50%]'
           alt=''
         />
