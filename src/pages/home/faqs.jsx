@@ -24,7 +24,7 @@ const Faq = () => {
       {/* Accordion */}
       <div className='lg:mx-20 mt-5 '>
         {[1, 2, 3, 4, 5].map((sectionIndex) => (
-          <div key={sectionIndex} className='mb-2 border-text border-2'>
+          <div key={sectionIndex} className='lg:mb-5 mb-3 rounded-xl overflow-x-hidden border-text border-2'>
             <button
               className='w-full px-4 border-b-2 border-slate-700 py-4 flex transition-all ease-linear duration-300 justify-between items-center'
               onClick={() => toggleSection(sectionIndex)}

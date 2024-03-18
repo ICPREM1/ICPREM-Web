@@ -6,8 +6,8 @@ import { useState } from "react";
 const Navbar = () => {
   let menuItems = [
     { title: "Home", to: "/", icon: "" },
-    { title: "Pay Due", to: "/", icon: "" },
-    { title: "Profile", to: "/", icon: "" },
+    { title: "Pay Due", to: "/payDues", icon: "" },
+    { title: "Profile", to: "/profile", icon: "" },
   ];
 
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -32,8 +32,8 @@ const Navbar = () => {
           Connect Wallet
         </button> */}
 
-        <button className='bg-gradient-to-r from-primary to-secondary mx-5 text-primary font-semibold px-0 py-0 rounded-xl'>
-          <span className='bg-white rounded-lg py-2 m-1 px-6'>Login</span>
+        <button className='mx-5 text-text border-2 border-text font-bold px-8 py-3 rounded-xl'>
+          Login
         </button>
 
         <button className='bg-gradient-to-r from-primary to-secondary text-white font-semibold px-6 py-3 rounded-xl'>
