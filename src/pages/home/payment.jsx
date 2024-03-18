@@ -2,7 +2,7 @@ import blank from "../../assets/Group 23.svg";
 
 const Payment = () => {
   return (
-    <main className='bg-gradient-to-br lg:py-32 py:10 text-white container mx-auto lg:px-20 px-5 from-primary to-secondary flex lg:flex-row flex-col'>
+    <main className='bg-gradient-to-br lg:py-32 py:10 text-white lg:container lg:mx-auto lg:px-20 px-5 from-primary to-secondary flex lg:flex-row flex-col'>
       <section className='lg:basis-[55%] lg:mt-0 mt-20 flex relative justify-center items-center basis-full'>
         <img src={blank} className='lg:h-3/5 h-44' alt='' />
 

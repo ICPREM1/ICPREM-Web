@@ -5,7 +5,7 @@ import link from "../assets/Vector.svg";
 
 const Footer = () => {
   return (
-    <footer className='bg-[#232323] body container mx-auto lg:px-20 px-5 py-10 text-white'>
+    <footer className='bg-[#232323] body lg:container mx-auto lg:px-20 px-5 py-10 text-white'>
       <section className='flex lg:flex-row flex-col justify-between'>
         <div className='lg:basis-2/4 basis-full'>
           <p className='font-bold lg:text-3xl text-2xl head'>Logo</p>
@@ -17,12 +17,14 @@ const Footer = () => {
           <div className='flex justify-between mt-5'>
             <input
               type='email'
-              className='bg-transparent text-grey outline-none px-6 w-[70%] py-4 border-2 border-white'
+              className='bg-transparent text-white/70 lg:text-base text-sm outline-none px-2 lg:px-6 w-[70%] lg:py-4 py-3 border-2 border-white'
               placeholder='Enter your Email'
               name=''
               id=''
             />
-            <button className='border-2 px-12 border-white'>Subscribe</button>
+            <button className='border-2 lg:px-12 px-2 lg:text-base text-sm border-white'>
+              Subscribe
+            </button>
           </div>
 
           <p className='mt-5 text-sm'>
@@ -31,7 +33,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className='lg:basis-1/3 basis-full flex flex-col lg:pl-16'>
+        <div className='lg:basis-1/3 lg:mt-0 mt-5 basis-full flex flex-col lg:pl-16'>
           <p>Follow Us</p>
           <a href='#' className='flex my-3'>
             <img src={face} className='mr-3' alt='' />
@@ -55,7 +57,21 @@ const Footer = () => {
         </div>
       </section>
 
-      <section></section>
+      <section className='lg:mt-20 mt-10 border-t-2 border-grey pt-10 flex lg:flex-row flex-col lg:justify-between'>
+        <div>2024 ICPREM. All right reserved.</div>
+
+        <div className='flex justify-between lg:justify-normal lg:mt-0 mt-5'>
+          <p className='underline lg:mx-3 text-xs lg:text-base'>
+            Privacy Policy
+          </p>
+          <p className='underline lg:mx-3 text-xs lg:text-base'>
+            Terms of Service
+          </p>
+          <p className='underline lg:mx-3 text-xs lg:text-base'>
+            Cookies Settings
+          </p>
+        </div>
+      </section>
     </footer>
   );
 };

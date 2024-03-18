@@ -19,7 +19,7 @@ const Home = () => {
       <Payment />
 
       <section className='relative overflow-y-hidden'>
-        <div className='container mx-auto lg:px-20 px-5'>
+        <div className='container lg:mx-auto mx-auto lg:px-20 px-5'>
           <Faq />
         </div>
 
