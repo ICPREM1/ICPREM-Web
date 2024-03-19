@@ -29,8 +29,7 @@ const Navbar = () => {
         ))}
       </section>
       <section className='basis-1/4 z-20 lg:flex hidden justify-end'>
-
-      {/* If User is logged in it displays the "Connect wallet button else you get Sign Up and Login. Initally user isn't logged in " */}
+        {/* If User is logged in it displays the "Connect wallet button else you get Sign Up and Login. Initally user isn't logged in " */}
         {isLogged ? (
           <>
             <Link
@@ -93,13 +92,21 @@ const Navbar = () => {
             </Link>
           ))}
 
-          <Link to={"/login"} className='py-6 text-white'>
-            Login
-          </Link>
+          {isLogged ? (
+            <Link to={"/"} className='py-6 text-white'>
+              Connect Wallet
+            </Link>
+          ) : (
+            <>
+              <Link to={"/login"} className='py-6 text-white'>
+                Login
+              </Link>
 
-          <Link to={"/signUp"} className='py-6 text-white'>
-            Sign Up
-          </Link>
+              <Link to={"/signUp"} className='py-6 text-white'>
+                Sign Up
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </nav>

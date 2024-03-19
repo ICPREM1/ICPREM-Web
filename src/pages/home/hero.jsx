@@ -30,7 +30,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <section className='lg:basis-[40%] hidden lg:mt-0 mt-36 mb-16 relative isolate basis-full lg:flex justify-center items-center'>
+      <section className='lg:basis-[40%] hidden lg:mt-0 mt-40 mb-16 relative isolate basis-full lg:flex justify-center items-center'>
         <img
           src={backdrop}
           className='h-[200px] lg:h-[200%] -z-10 absolute'
@@ -40,7 +40,7 @@ const Hero = () => {
 
       <img
         src={sponsors}
-        className='left-0 right-0 mx-auto absolute bottom-0'
+        className='left-0 right-0 lg:h-20 mx-auto absolute bottom-0'
         alt=''
       />
     </main>

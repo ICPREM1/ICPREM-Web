@@ -1,4 +1,3 @@
-import blank from "../../assets/Group 23.svg";
 import pic from "../../assets/Image.svg";
 import pic1 from "../../assets/Image1.svg";
 import pic2 from "../../assets/Image2.svg";

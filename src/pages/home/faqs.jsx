@@ -1,7 +1,6 @@
-import { Collapse, initTWE } from "tw-elements";
 import { useState } from "react";
+import { FiPlus } from "react-icons/fi";
 
-initTWE({ Collapse });
 const Faq = () => {
   const [activeSection, setActiveSection] = useState(null);
 
@@ -46,7 +45,7 @@ const Faq = () => {
       title:
         "Can I trade or sell my NFT receipts on external platforms, or are they exclusively stored within the app?",
       response:
-        "While your NFT receipts are stored securely within the app. you may have the option to trade or sell them on external platforms that support NFT trading. This allows you to potentially monetize your receipts or engage in NFT-based activities outside of the app ecosystem, However. it's essential to verify the cotnpatibility and terms Of such external platforms before proceeding With any transactions",
+        "While your NFT receipts are stored securely within the app. you may have the option to trade or sell them on external platforms that support NFT trading. This allows you to potentially monetize your receipts or engage in NFT-based activities outside of the app ecosystem, However, it's essential to verify the cotnpatibility and terms of such external platforms before proceeding With any transactions",
 
       index: 5,
     },
@@ -72,11 +71,11 @@ const Faq = () => {
             className='lg:mb-5 mb-3 rounded-xl overflow-x-hidden lg:text-base text-sm border-text border-2'
           >
             <button
-              className='w-full lg:px-4 px-2 border-b-2 border-slate-700 lg:py-4 py-2 flex transition-all ease-linear duration-300 justify-between items-center'
+              className='w-full lg:px-4 px-1 border-b-2 border-slate-700 lg:py-4 py-2 flex transition-all ease-linear duration-300 justify-between items-center'
               onClick={() => toggleSection(section.index)}
             >
               <span className='text-text'>{section.title}</span>
-              <svg
+              {/* <svg
                 className={`w-6 h-6 ${
                   activeSection === section.index ? "transform rotate-180" : ""
                 }`}
@@ -90,7 +89,13 @@ const Faq = () => {
                   strokeWidth={2}
                   d='M19 9l-7 7-7-7'
                 />
-              </svg>
+              </svg> */}
+
+              <FiPlus
+                className={` lg:size-[1.3rem] size-4 ${
+                  activeSection === section.index ? "transform rotate-180" : ""
+                }`}
+              />
             </button>
             {activeSection === section.index && (
               <div className='transition-all ease-linear duration-300 p-4'>
