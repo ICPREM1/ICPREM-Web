@@ -30,7 +30,7 @@ const Login = () => {
       />
       <img
         src={rightbubble}
-        className='fixed right-0 bottom-0 lg:h-[90%] h-32'
+        className='fixed right-0 -z-10 bottom-0 lg:h-[90%] h-32'
         alt=''
       />
       <p className='lg:text-5xl text-3xl head font-bold'>Login</p>

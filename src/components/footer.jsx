@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className='bg-[#232323] body lg:container mx-auto lg:px-20 px-5 lg:py-20 py-10 text-white/90'>
       <section className='flex lg:flex-row flex-col justify-between'>
         <div className='lg:basis-2/4 basis-full'>
-          <p className='font-bold lg:text-3xl text-2xl head'>Logo</p>
+          <p className='font-black lg:text-3xl text-2xl head'>ICPREM</p>
 
           <p className='mt-5 lg:text-lg text-sm'>
             Join our newsletter to stay up to date on features and releases.

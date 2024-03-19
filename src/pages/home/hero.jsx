@@ -1,8 +1,9 @@
 import backdrop from "../../assets/backdrop.svg";
+import sponsors from "@/assets/Frame 7.svg";
 
 const Hero = () => {
   return (
-    <main className='flex lg:flex-row lg:pt-20 pt-10 flex-col'>
+    <main className='flex lg:flex-row lg:pt-20 pt-10 flex-col relative'>
       <section className='lg:basis-[60%] basis-full'>
         <p className='font-bold lg:text-left head text-center lg:text-5xl text-4xl lg:leading-normal'>
           <span className='bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'>
@@ -15,17 +16,15 @@ const Hero = () => {
           <br className='md:block hidden' /> are made
         </p>
 
-        <p className='lg:mt-10 mt-5 text-sm body lg:text-left text-justify lg:text-base leading-relaxed'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
-          voluptates ut repudiandae quisquam possimus doloribus vel corporis
-          atque officiis dolor rem enim suscipit consectetur fuga nobis mollitia
-          minus velit veniam placeat blanditiis quibusdam, dignissimos illo?
-          Debitis, architecto quod similique fugiat explicabo quos veritatis
-          minima velit commodi doloremque incidunt aut magnam.
+        <p className='lg:mt-10 mt-5 text-sm body lg:text-left text-justify lg:text-lg leading-relaxed'>
+          ICPREM is a payment platform that facilitates the payment of
+          university dues by issuing digital receipts in the form of NFTs.
+          Thanks to this, issues of security and authenticity of payments are
+          dealt with.
         </p>
 
-        <div className='flex lg:justify-start justify-center'>
-          <button className='bg-gradient-to-r from-primary to-secondary lg:mt-10 mt-5 text-white font-semibold px-8 py-4 rounded-xl'>
+        <div className='flex lg:justify-start justify-center lg:mb-36 mb-20'>
+          <button className='bg-gradient-to-r from-primary to-secondary lg:mt-10 mt-10 text-white font-semibold px-8 lg:py-4 py-3 rounded-xl'>
             Make Payment
           </button>
         </div>
@@ -38,6 +37,12 @@ const Hero = () => {
           alt=''
         />
       </section>
+
+      <img
+        src={sponsors}
+        className='left-0 right-0 mx-auto absolute bottom-0'
+        alt=''
+      />
     </main>
   );
 };

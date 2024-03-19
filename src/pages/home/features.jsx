@@ -7,17 +7,17 @@ const Features = () => {
   let reasons = [
     {
       heading: "Security",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eum voluptatem obcaecati, architecto consequatur nisi soluta obcaecati ipsuma quam ullam eumdicta debitis saepe. Amet, consequatur blanditiis",
+      body: "Thanks to the decentralized and immutable nature of blockchain, user data remain protected at all times.",
       img: lock,
     },
     {
       heading: "Authenticity",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eum voluptatem obcaecati, architecto consequatur nisi soluta obcaecati ipsuma quam ullam eumdicta debitis saepe. Amet, consequatur blanditiis",
+      body: "With ICPREM you never have to worry about receipt forgery, as all payments will be authenticated by the blockchain.",
       img: tick,
     },
     {
       heading: "Transparency",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eum voluptatem obcaecati, architecto consequatur nisi soluta obcaecati ipsuma quam ullam eumdicta debitis saepe. Amet, consequatur blanditiis",
+      body: "Thanks to blockchain decentralization, all transactions are recorded, making embezzlement impossible.",
       img: detective,
     },
   ];
@@ -33,12 +33,12 @@ const Features = () => {
         {reasons.map((item, index) => (
           <div
             key={index}
-            className='basis-[30%] rounded-2xl lg:my-0 lg:py-5 my-5 flex flex-col lg:w-auto w-[80vw] box items-center'
+            className='basis-[30%] rounded-2xl lg:my-0 lg:py-10 py-5 my-5 flex flex-col lg:w-auto w-[75vw] box items-center'
           >
             <img
               src={item.img}
               alt='card-icon'
-              className='lg:h-16 h-12 w-16 lg:w-20 mt-5 lg:mt-16'
+              className='lg:h-16 h-12 w-16 lg:w-20 mt-5 lg:mt-8'
             />
             <p className='lg:text-2xl head text-primary text-lg font-semibold mt-5 lg:mt-10'>
               {item.heading}

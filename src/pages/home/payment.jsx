@@ -34,15 +34,10 @@ const Payment = () => {
           Payment Made <br className='md:block hidden' /> Unique
         </p>
 
-        <p className='lg:mt-10 mt-5 text-sm body lg:text-left text-justify leading-relaxed'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
-          dolore? Quod eveniet dignissimos facere ab. Numquam error obcaecati
-          modi autem expedita laboriosam ea laudantium, perferendis dicta,
-          officia unde ut vitae voluptatibus magnam illo fugit. Commodi saepe
-          soluta sed mollitia ullam rem alias numquam fugiat quae nesciunt
-          voluptatem consequatur beatae ipsa doloremque quasi, necessitatibus
-          minus perspiciatis consequuntur! Magni accusantium assumenda
-          aspernatur!
+        <p className='lg:mt-10 mt-5 text-sm lg:text-lg body lg:text-left text-justify leading-relaxed'>
+          By using ICP Sahara blockchain for payments, ICPREM deals with issues
+          of security and authenticity of payments, while eliminating all
+          possibilities of receipt misplacements and forgeries.
         </p>
 
         <div className='flex lg:justify-start justify-center'>
