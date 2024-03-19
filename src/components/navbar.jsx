@@ -27,16 +27,19 @@ const Navbar = () => {
           </Link>
         ))}
       </section>
-      <section className='basis-1/4 lg:flex hidden justify-end'>
-        {/* <button className='bg-gradient-to-r body from-primary to-secondary  text-white font-bold px-8 py-4 rounded-xl'>
-          Connect Wallet
-        </button> */}
-
-        <Link to={"/login"} className='mx-5 text-text border-2 border-text font-bold px-8 py-3 rounded-xl'>
+      <section className='basis-1/4 z-20 lg:flex hidden justify-end'>
+        <Link
+          to={"/login"}
+          onClick={()=>console.log("heee")}
+          className='mx-5 text-text border-2 border-text font-bold px-8 py-3 rounded-xl'
+        >
           Login
         </Link>
 
-        <Link to={"/signUp"} className='bg-gradient-to-r from-primary to-secondary text-white font-semibold px-6 py-3 rounded-xl'>
+        <Link
+          to={"/signUp"}
+          className='bg-gradient-to-r from-primary to-secondary text-white font-semibold px-6 py-3 rounded-xl'
+        >
           Sign Up
         </Link>
       </section>
@@ -74,9 +77,13 @@ const Navbar = () => {
             </Link>
           ))}
 
-          <Link to={"/login"} className='py-6 text-white'>Login</Link>
+          <Link to={"/login"} className='py-6 text-white'>
+            Login
+          </Link>
 
-          <Link to={"/signUp"} className='py-6 text-white'>Sign Up</Link>
+          <Link to={"/signUp"} className='py-6 text-white'>
+            Sign Up
+          </Link>
         </div>
       </div>
     </nav>

@@ -17,12 +17,12 @@ const Footer = () => {
           <div className='flex justify-between mt-5'>
             <input
               type='email'
-              className='bg-transparent rounded-md lg:rounded-xl text-white/70 lg:text-base text-sm outline-none px-2 lg:px-6 w-[70%] lg:py-4 py-3 border-2 border-white'
+              className='bg-transparent rounded-md lg:rounded-xl text-white/70 lg:text-base text-sm outline-none px-2 lg:px-6 w-[70%] lg:py-4 py-3 border-2 border-white/90'
               placeholder='Enter your Email'
               name=''
               id=''
             />
-            <button className='border-2 lg:px-12 px-2 rounded-md lg:rounded-xl lg:text-base text-sm border-white'>
+            <button className='border-2 lg:px-12 px-2 rounded-md lg:rounded-xl lg:text-base text-sm border-white/90'>
               Subscribe
             </button>
           </div>

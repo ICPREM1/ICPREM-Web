@@ -6,7 +6,7 @@ import pic3 from "@/assets/imCard3.svg";
 import { useState } from "react";
 
 const PayDues = () => {
-  const [selectedImage, setSelectedImage] = useState(pic3);
+  const [selectedImage, setSelectedImage] = useState(pic1);
 
   const handleChange = (event) => {
     const selectedValue = event.target.value;
