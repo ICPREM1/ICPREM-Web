@@ -12,7 +12,7 @@ contract Fees_General is   ERC721, Ownable {
   using Strings for uint256;
 
   string baseURI;
-  uint256 cost = 0.05 * 10 ** 18; //Price is to be determined by HTTPS Calls, that was not available so we improvised.
+  uint256 cost = 0.01 * 10 ** 18; //Price is to be determined by HTTPS Calls, that was not available so we improvised.
   string public baseExtension = ".json";
   bool public paused = false;
   bool public revealed = false;
@@ -89,9 +89,9 @@ contract Fees_General is   ERC721, Ownable {
     paused = _state;
   }
  
-  function withdrawMoney() public onlyOwner {
+  function withdrawMoney(uint256 _amount) public onlyOwner {
     address payable to = payable(msg.sender);
-    to.transfer(address(this).balance);
+    to.transfer(_amount);
   }
 
 }
