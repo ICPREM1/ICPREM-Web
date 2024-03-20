@@ -4,6 +4,7 @@ import sponsor1 from "@/assets/Rectangle 7.svg";
 import sponsor2 from "@/assets/Rectangle 5.svg";
 import sponsor3 from "@/assets/Rectangle 6.svg";
 import sponsor4 from "@/assets/Rectangle 9.svg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -28,9 +29,9 @@ const Hero = () => {
         </p>
 
         <div className='flex lg:justify-start justify-center lg:mb-36 mb-20'>
-          <button className='bg-gradient-to-r from-primary to-secondary lg:mt-10 mt-10 text-white font-semibold px-8 lg:py-4 py-3 rounded-xl'>
+          <Link to={"/payDues"} className='bg-gradient-to-r from-primary to-secondary lg:mt-10 mt-10 text-white font-semibold px-8 lg:py-4 py-3 rounded-xl'>
             Make Payment
-          </button>
+          </Link>
         </div>
       </section>
 

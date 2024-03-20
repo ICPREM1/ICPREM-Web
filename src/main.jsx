@@ -1,8 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import '@rainbow-me/rainbowkit/styles.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import "@rainbow-me/rainbowkit/styles.css";
 
 import {
   getDefaultConfig,
@@ -42,15 +42,14 @@ const config = getDefaultConfig({
 
 const queryClient = new QueryClient();
 
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider>
-        <App />
+          <App />
         </RainbowKitProvider>
-        </QueryClientProvider>
+      </QueryClientProvider>
     </WagmiProvider>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
