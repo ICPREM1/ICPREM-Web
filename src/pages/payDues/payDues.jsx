@@ -5,9 +5,8 @@ import pic2 from "@/assets/imCard2.svg";
 import pic3 from "@/assets/imCard3.svg";
 import { useState } from "react";
 import { BitfinityNetworkTestnet } from "@thirdweb-dev/chains";
-import { ThirdwebSDK } from "@thirdweb-dev/sdk";
+import { ThirdwebSDK, Web3Button } from "@thirdweb-dev/sdk";
 
-import { Web3Button } from "@thirdweb-dev/react";
 
 const sdk = new ThirdwebSDK(BitfinityNetworkTestnet, {
   clientId: "e0a25b6c78f2fa86cbc44cb1b1f90ed3",
