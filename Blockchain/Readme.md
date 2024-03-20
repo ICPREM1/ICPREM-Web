@@ -33,3 +33,16 @@ This Solidity code defines a smart contract named `Fees_General` that extends th
 
 This contract demonstrates a practical application of ERC721 tokens for representing unique entities (in this case, payers) with associated metadata. It also showcases the use of OpenZeppelin's `Ownable` contract for access control, ensuring that only the contract owner can perform certain actions like revealing NFTs, setting URIs, and withdrawing funds.
 
+
+## Contract Deployment
+Dues to being able to access HTTPS Calls, we had to improve to using  0.02 BFT for NUESA Fees, 0.01 BFT for Digitron Fees and 0.05 BFT for SUG Fees for testing. 
+Feel free to interact with the Smart Contracts.
+
+
+[Digitron Dues](https://explorer.bitfinity.network/token/0x8b88DF64B67B741F97A742480f822FC8a76ff87B)
+
+
+[NUESA Dues](https://explorer.bitfinity.network/token/0x2118aB4d5381aCE2973f46AD8CCa422e109e7964)
+
+
+[SUG Dues](https://explorer.bitfinity.network/token/0x8209Ce8F61Ee19ef5CF47fB4f982944b312C9bC8)
