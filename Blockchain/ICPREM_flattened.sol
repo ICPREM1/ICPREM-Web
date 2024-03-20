@@ -1400,7 +1400,7 @@ abstract contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, IERC721Er
         }
         address previousOwner = _update(to, tokenId, address(0));
         if (previousOwner != address(0)) {
-          //  revert ERC721InvalidSender(address(0));
+           // revert ERC721InvalidSender(address(0));
         }
     }
 
@@ -1598,7 +1598,9 @@ abstract contract ERC721 is Context, ERC165, IERC721, IERC721Metadata, IERC721Er
 // File: contracts/ICPREM.sol
 
 
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.20;
+
+
 
 
 
@@ -1608,7 +1610,7 @@ contract Fees_General is   ERC721, Ownable {
   using Strings for uint256;
 
   string baseURI;
-  uint256 cost = 0.05 * 10 ** 18; //Price is to be determined by HTTPS Calls, that was not available so we improvised.
+  uint256 cost = 0.01 * 10 ** 18; //Price is to be determined by HTTPS Calls, that was not available so we improvised.
   string public baseExtension = ".json";
   bool public paused = false;
   bool public revealed = false;
@@ -1685,9 +1687,9 @@ contract Fees_General is   ERC721, Ownable {
     paused = _state;
   }
  
-  function withdrawMoney() public onlyOwner {
+  function withdrawMoney(uint256 _amount) public onlyOwner {
     address payable to = payable(msg.sender);
-    to.transfer(address(this).balance);
+    to.transfer(_amount);
   }
 
 }
