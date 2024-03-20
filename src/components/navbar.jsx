@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { TbMenuDeep } from "react-icons/tb";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 const Navbar = () => {
   let menuItems = [
@@ -11,7 +12,7 @@ const Navbar = () => {
   ];
 
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [isLogged, setIsLogged] = useState(false);
+  const [isLogged, setIsLogged] = useState(true);
   return (
     <nav className='flex items-center lg:h-24 h-16 lg:pt-5 lg:border-0 body border-primary border-b-[1px]'>
       <section className='lg:basis-1/4 basis-1/2'>
@@ -32,12 +33,7 @@ const Navbar = () => {
         {/* If User is logged in it displays the "Connect wallet button else you get Sign Up and Login. Initally user isn't logged in " */}
         {isLogged ? (
           <>
-            <Link
-              to={"/"}
-              className='bg-gradient-to-r from-primary to-secondary text-white font-semibold px-6 py-3 rounded-xl'
-            >
-              Connect Wallet
-            </Link>
+           <ConnectButton />
           </>
         ) : (
           <>
@@ -93,9 +89,9 @@ const Navbar = () => {
           ))}
 
           {isLogged ? (
-            <Link to={"/"} className='py-6 text-white'>
-              Connect Wallet
-            </Link>
+           <div className="mt-5">
+            <ConnectButton />
+           </div>
           ) : (
             <>
               <Link to={"/login"} className='py-6 text-white'>

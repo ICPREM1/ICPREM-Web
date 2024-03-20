@@ -1,5 +1,9 @@
 import backdrop from "../../assets/backdrop.svg";
 import sponsors from "@/assets/Frame 7.svg";
+import sponsor1 from "@/assets/Rectangle 7.svg";
+import sponsor2 from "@/assets/Rectangle 5.svg";
+import sponsor3 from "@/assets/Rectangle 6.svg";
+import sponsor4 from "@/assets/Rectangle 9.svg";
 
 const Hero = () => {
   return (
@@ -38,11 +42,27 @@ const Hero = () => {
         />
       </section>
 
-      <img
+      {/* <img
         src={sponsors}
         className='left-0 right-0 lg:h-20 mx-auto absolute bottom-0'
         alt=''
-      />
+      /> */}
+
+      {/* <div className="flex w-full justify-between items-center left-0 right-0 bg-red-400 lg:h-20 mx-auto absolute bottom-0">
+        <img src={sponsor1} className="lg:h-full h-8"/>
+        <img src={sponsor2} className="lg:h-full h-8"/>
+        <img src={sponsor3} className="lg:h-full h-8"/>
+        <img src={sponsor4} className="lg:h-full h-8"/>
+      </div> */}
+
+      <div className="scroller absolute w-full flex justify-center bottom-0">
+        <ul className="flex justify-between lg:justify-around w-full">
+          <li><img src={sponsor1} className="lg:h-full h-8"/></li>
+          <li><img src={sponsor3} className="lg:h-full h-8"/></li>
+          <li><img src={sponsor2} className="lg:h-full h-8"/></li>
+          <li><img src={sponsor4} className="lg:h-full h-8"/></li>
+        </ul>
+      </div>
     </main>
   );
 };
