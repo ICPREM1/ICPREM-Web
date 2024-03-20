@@ -34,7 +34,8 @@ This contract demonstrates a practical application of ERC721 tokens for represen
 
 
 ## Contract Deployment
-Dues to being able to access HTTPS Calls, we had to improve to using  0.02 BFT for NUESA Fees, 0.01 BFT for Digitron Fees and 0.05 BFT for SUG Fees for testing. 
+Dues to being unable to access HTTPS Calls, we had to improvise to using  0.02 BFT for NUESA Fees, 0.01 BFT for Digitron Fees and 0.05 BFT for SUG Fees for testing. 
+
 Feel free to interact with the Smart Contracts.
 
 
