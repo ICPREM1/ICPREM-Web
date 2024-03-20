@@ -33,7 +33,7 @@ const Navbar = () => {
         {/* If User is logged in it displays the "Connect wallet button else you get Sign Up and Login. Initally user isn't logged in " */}
         {isLogged ? (
           <>
-           <ConnectButton />
+            <ConnectButton />
           </>
         ) : (
           <>
@@ -68,7 +68,7 @@ const Navbar = () => {
         }`}
       >
         <div className='flex justify-between'>
-          <p className='font-bold text-3xl head text-white'>Logo</p>
+          <p className='font-bold text-3xl head text-white'>ICPREM</p>
 
           <IoClose
             size={"2.3rem"}
@@ -89,9 +89,9 @@ const Navbar = () => {
           ))}
 
           {isLogged ? (
-           <div className="mt-5">
-            <ConnectButton />
-           </div>
+            <div className='mt-5'>
+              <ConnectButton />
+            </div>
           ) : (
             <>
               <Link to={"/login"} className='py-6 text-white'>
