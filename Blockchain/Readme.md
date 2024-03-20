@@ -27,7 +27,6 @@ This Solidity code defines a smart contract named `Fees_General` that extends th
  - `reveal()`: Toggles the `revealed` state, allowing the owner to reveal the NFTs.
  - `setNotRevealedURI(string memory _notRevealedURI)`: Allows the owner to set the URI for unrevealed NFTs.
  - `setBaseURI(string memory _newBaseURI)`: Allows the owner to set the base URI for token metadata.
- - `setBaseExtension(string memory _newBaseExtension)`: Allows the owner to set the file extension for token metadata URIs.
  - `pause(bool _state)`: Allows the owner to pause or unpause the contract.
  - `withdrawMoney()`: Allows the owner to withdraw BFT from the contract.
 
