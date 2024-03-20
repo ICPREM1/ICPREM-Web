@@ -5,7 +5,7 @@ import pic2 from "@/assets/imCard2.svg";
 import pic3 from "@/assets/imCard3.svg";
 import { useState } from "react";
 import { BitfinityNetworkTestnet } from "@thirdweb-dev/chains";
-import { ThirdwebSDK, Web3Button } from "@thirdweb-dev/sdk";
+import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 
 
 const sdk = new ThirdwebSDK(BitfinityNetworkTestnet, {
@@ -95,14 +95,14 @@ const PayDues = () => {
           </section>
 
           <button className='bg-gradient-to-r from-primary to-secondary mt-5 text-white font-semibold px-8 py-4 w-full rounded-xl'>
-            <Web3Button
+            <script
       contractAddress="0x8209Ce8F61Ee19ef5CF47fB4f982944b312C9bC8"
       action={(contract) => {
         contract.mint("Chimbo Udochukwu Enyinnaya", "Electronic Engineering", "400LVL")
       }}
     >
     MINT
-    </Web3Button>
+    </script>
            
           </button>
         </div>
