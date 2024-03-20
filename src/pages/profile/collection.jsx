@@ -3,6 +3,7 @@ import { TbCurrencyNaira } from "react-icons/tb";
 import pic1 from "@/assets/imCard.svg"
 import pic2 from "@/assets/imCard2.svg";
 import pic3 from "@/assets/imCard3.svg";
+import { Link } from "react-router-dom";
 
 const Collection = () => {
   let NFTCollection = [
@@ -57,9 +58,9 @@ const Collection = () => {
       </section>
 
       <div className='flex justify-center mt-5'>
-        <button className='bg-gradient-to-r from-primary to-secondary mt-5 text-white font-semibold px-8 py-3 rounded-xl'>
+        <Link to={"/payDues"} className='bg-gradient-to-r from-primary to-secondary mt-5 text-white font-semibold px-8 py-3 rounded-xl'>
           Make Payment
-        </button>
+        </Link>
       </div>
     </main>
   );
