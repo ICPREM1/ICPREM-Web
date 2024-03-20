@@ -48,7 +48,7 @@ We propose a platform that facilitates association and college group payments us
 - [@Ony3dika](https://github.com/Ony3dika) - Frontend Developer
 
 ### Note: Refer to readme file in blockhain folder for more insight on the blockchain aspects
-[Blockchain Readme](https://github.com/ICPREM1/ICPREM-Web/Blockchain/Readme.md)
+[Blockchain Readme](https://github.com/ICPREM1/ICPREM-Web/blob/main/Blockchain/Readme.md)
 
 
 See also the list of [contributors](https://github.com/ICPREM1/ICPREM-Web/graphs/contributors) who participated in this project.
