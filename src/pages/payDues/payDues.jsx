@@ -4,7 +4,15 @@ import pic1 from "@/assets/imCard.svg";
 import pic2 from "@/assets/imCard2.svg";
 import pic3 from "@/assets/imCard3.svg";
 import { useState } from "react";
+import { BitfinityNetworkTestnet } from "@thirdweb-dev/chains";
+import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 
+import { Web3Button } from "@thirdweb-dev/react";
+
+const sdk = new ThirdwebSDK(BitfinityNetworkTestnet, {
+  clientId: "e0a25b6c78f2fa86cbc44cb1b1f90ed3",
+});
+const contract = await sdk.getContract("0x8209Ce8F61Ee19ef5CF47fB4f982944b312C9bC8");
 const PayDues = () => {
   const [selectedImage, setSelectedImage] = useState(pic1);
 
@@ -88,7 +96,15 @@ const PayDues = () => {
           </section>
 
           <button className='bg-gradient-to-r from-primary to-secondary mt-5 text-white font-semibold px-8 py-4 w-full rounded-xl'>
-            Mint
+            <Web3Button
+      contractAddress="0x8209Ce8F61Ee19ef5CF47fB4f982944b312C9bC8"
+      action={(contract) => {
+        contract.mint("Chimbo Udochukwu Enyinnaya", "Electronic Engineering", "400LVL")
+      }}
+    >
+    MINT
+    </Web3Button>
+           
           </button>
         </div>
       </section>
