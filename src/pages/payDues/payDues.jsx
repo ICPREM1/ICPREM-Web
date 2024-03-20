@@ -11,7 +11,12 @@ import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 const sdk = new ThirdwebSDK(BitfinityNetworkTestnet, {
   clientId: "e0a25b6c78f2fa86cbc44cb1b1f90ed3",
 });
-const contract = await sdk.getContract("0x8209Ce8F61Ee19ef5CF47fB4f982944b312C9bC8");
+async function Mint ()
+{
+  const contract = await sdk.getContract("0x8209Ce8F61Ee19ef5CF47fB4f982944b312C9bC8");
+ return contract.mint("Chimbo Udochukwu Enyinnaya", "Electronic Engineering", "400LVL")
+}
+;
 const PayDues = () => {
   const [selectedImage, setSelectedImage] = useState(pic1);
 
@@ -94,16 +99,9 @@ const PayDues = () => {
             </p>
           </section>
 
-          <button className='bg-gradient-to-r from-primary to-secondary mt-5 text-white font-semibold px-8 py-4 w-full rounded-xl'>
-            <script
-      contractAddress="0x8209Ce8F61Ee19ef5CF47fB4f982944b312C9bC8"
-      action={(contract) => {
-        contract.mint("Chimbo Udochukwu Enyinnaya", "Electronic Engineering", "400LVL")
-      }}
-    >
-    MINT
-    </script>
-           
+          <button className='bg-gradient-to-r from-primary to-secondary mt-5 text-white font-semibold px-8 py-4 w-full rounded-xl'
+          onClick={() => Mint()}>
+         MINT  
           </button>
         </div>
       </section>
