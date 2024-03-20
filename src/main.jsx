@@ -8,6 +8,7 @@ import './index.css'
 // import { mainnet, polygon, optimism, arbitrum, base, zora } from "wagmi/chains";
 // import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
